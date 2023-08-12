@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{line-height: 5;
+        padding: 10px;
+    border: 1px solid transparent;
+    font-size: larger;
+    }
+    .div1{background-color: beige;
+    display: flex;
+    justify-content: center;
+    }
+    table{justify-content: center;}
+    label{border: 1px solid black;
+    
+        border-radius: 5px;
+        padding: 2px;}
+    p{border: 1px solid black;
+    
+        border-radius: 5px;
+        padding: 2px;
+    display: inline;}
+    button{color: white;
+        background-color: red;
+        border: solid black 1px;
+        padding: 2px;
+        font-weight: bolder;
+        border-radius: 5px;
+        }
+        input{padding: 5px;
+        border-radius: 5px;}
+    </style>
+</head>
+<body>
+    <a href="Index.html" id="anchor1"><input type="image" id="imagebutton" src="back1.png" height="40px" width="40px"></a>
+    <div class="div1">
+        
+        <table>
+            <form action="">
+                <tr>
+                    <td><label for="I1"><b>Enter your name:</b></label></td>
+                    <td><input type="text" id="I1" placeholder="Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="I2"><b>Enter your complete residential address:</b></label></td>
+                    <td><input type="text" id="I2" placeholder="Address"></td>
+                </tr>
+                <tr>
+                    <td><label for="I3"><b>Enter your mobile number:</b></label></td>
+                    <td> <input type="text" id="I3" placeholder="Enter your mobile number"></td>
+                </tr>
+                <tr>
+                    <td><p><b>Gender</b></p></td>
+                    <td>
+                        <label for="I4">Male</label>
+                        <input type="radio" id="I4" name="radio">
+                        
+                        <label for="I5">Female</label>
+                        <input type="radio" id="I5" name="radio"></td>
+                </tr>
+                <tr>
+                    <td><label for="I6"><b>Choose the username:</b></label></td>
+                    <td><input type="text" id="I6" placeholder="Enter your username"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><button>Submit</button></td>
+                </tr>
+            </form>
+        </table>
+    </div>
+</body>
+</html>

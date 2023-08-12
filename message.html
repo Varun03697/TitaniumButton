@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function func(){
+            alert("We want access to your current location.")
+            func2()
+        }
+        function func2(){
+            alert("Do you want to turn on your GPS")
+        }
+    </script>
+    <style>
+        .container{display: flex;
+        justify-content: left;
+        align-items: center;
+        }
+        table{line-height: 5;
+            margin: 100px;
+            color: black;
+            font-size: larger;
+            font-weight: bold;
+        }
+        td{border: 20px solid transparent;
+        }
+        button{color: white;
+            background-color: orange;
+            border: solid black 1px;
+            padding: 2px;
+            font-weight: bolder;
+            border-radius: 5px;
+            }
+           
+         #I1{
+            align-items: right;
+            border-radius: 10px;
+         }   
+    </style>
+</head>
+<body>
+    <a href="Index.html" id="anchor1"><input type="image" id="imagebutton" src="back1.png" height="40px" width="40px"></a>
+    <div class="container">
+        
+        <table>
+            <tr>
+                <td><label for="G1">Injured Animal:</label></td>
+                <td><select name="animals" id="G1">
+                    <option value="Dog">Dog</option>
+                    <option value="Cat">Cat</option>
+                    <option value="Cow">Cow</option>
+                    <option value="Bufallo">Bufallo</option>
+                    <option value="Others">Others</option>
+                </select></td>
+
+            </tr>
+            <tr >
+                <td><label for="G2">Upload the image:</label></td>
+                <td><input type="file" id="G2"></td>
+            </tr>
+            <tr >
+                <td colspan="2"><button id="B1" onclick="func()">Submit</button></td>
+            </tr>
+        </table>
+        <img src="https://source.unsplash.com/420x350/?dogs,cows" alt="photo" height="100%" id="I1">
+    </div>
+</body>
+</html>
